@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Thrifted by AZA - Forest Green & Cream Theme */
+    --background: 40 30% 96%;
+    --foreground: 160 50% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 50% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 50% 15%;
+
+    /* Deep forest green from logo */
+    --primary: 160 45% 20%;
+    --primary-foreground: 40 35% 92%;
+
+    /* Lighter green accent */
+    --secondary: 160 35% 35%;
+    --secondary-foreground: 40 35% 92%;
+
+    /* Warm cream tones */
+    --muted: 40 25% 88%;
+    --muted-foreground: 160 30% 30%;
+
+    /* Gold accent */
+    --accent: 38 60% 55%;
+    --accent-foreground: 160 50% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 40 35% 92%;
+
+    --border: 160 20% 85%;
+    --input: 160 20% 90%;
+    --ring: 160 45% 20%;
+
+    --radius: 0.5rem;
+
+    /* Boutique-specific tokens */
+    --hero-overlay: 160 45% 20%;
+    --price-tag: 38 60% 55%;
+    --success: 140 50% 45%;
+  }
+
+  .dark {
+    --background: 160 45% 12%;
+    --foreground: 40 35% 92%;
+
+    --card: 160 40% 15%;
+    --card-foreground: 40 35% 92%;
+
+    --popover: 160 40% 15%;
+    --popover-foreground: 40 35% 92%;
+
+    --primary: 40 35% 92%;
+    --primary-foreground: 160 45% 20%;
+
+    --secondary: 160 35% 25%;
+    --secondary-foreground: 40 35% 92%;
+
+    --muted: 160 30% 22%;
+    --muted-foreground: 40 25% 75%;
+
+    --accent: 38 60% 55%;
+    --accent-foreground: 160 50% 15%;
+
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 40 35% 92%;
+
+    --border: 160 30% 25%;
+    --input: 160 30% 25%;
+    --ring: 40 35% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
